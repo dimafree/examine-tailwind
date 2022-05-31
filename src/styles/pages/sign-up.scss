@@ -1,0 +1,8 @@
+.sign-up-page {
+  .socials {
+    @apply flex justify-center mb-8 space-x-4;
+    li {
+      @apply cursor-pointer transition-all hover:opacity-80;
+    }
+  }
+}

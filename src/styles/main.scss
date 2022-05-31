@@ -1,0 +1,19 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+**/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** Import theme styles */
+@import "./common/fonts";
+@import "./common/global";
+
+/** Layouts */
+@import "./common/header";
+@import "./common/footer";
+
+/** Pages */
+@import "./pages/sign-up";
+

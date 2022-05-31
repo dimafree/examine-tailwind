@@ -1,0 +1,50 @@
+* {
+  @apply text-dark;
+  font-family: Inter, sans-serif;
+  outline:     none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lora, sans-serif;
+}
+
+h2 {
+  @apply text-xl lg:text-40 font-medium leading-snug;
+}
+
+p {
+  @apply text-base font-normal mb-4 md:mb-8;
+}
+
+.btn {
+  @apply text-sm md:text-base lg:text-xl font-normal bg-primary text-white text-center p-4 rounded-md transition-all;
+  &:hover {
+    @apply bg-[#8C68CD];
+  }
+  &:active {
+    @apply bg-[#24173D];
+  }
+  &:disabled {
+    @apply bg-[#BABBBD] pointer-events-none;
+  }
+}
+
+label {
+  @apply block mb-4;
+  input {
+    @apply text-sm md:text-base lg:text-xl text-dark block w-full border border-[#CED4DA] rounded-md px-4 py-2;
+    &::placeholder {
+      @apply text-secondary;
+    }
+    &:hover {
+      @apply shadow-input border border-[#CED4DA];
+    }
+    &:focus {
+      @apply shadow-input border border-[#C5B3E6];
+    }
+  }
+}
+
+.password {
+  @apply absolute right-2 top-1/2 -translate-y-1/2 text-[#562E69] uppercase font-bold text-xs transition-all hover:opacity-80 cursor-pointer;
+}
