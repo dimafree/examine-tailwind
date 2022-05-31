@@ -12,9 +12,11 @@ module.exports = {
         dark: '#212529',
         primary: '#5E3B76',
         secondary: '#6C757D',
+        premium: '#FFD747',
       },
       fontSize: {
         40: '40px',
+        25: '25px',
       },
       borderRadius: {
         30: '30px',

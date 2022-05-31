@@ -1,19 +1,41 @@
-.footer p {
-    @apply text-white text-base mb-4;
+.footer {
+  @apply text-center sm:text-left;
 }
 
-.footer h6 {
-    @apply text-white text-base mb-4;
+.footer p {
+  @apply text-white text-sm mb-2;
+}
+
+.footer .socials {
+  @apply flex justify-center sm:justify-start space-x-2;
+  img {
+    @apply w-8;
+  }
+}
+
+.footer h4 {
+  @apply text-white font-bold text-xl mb-4;
+}
+
+.footer .list {
+  @apply mb-8 sm:pl-2 w-full sm:w-1/2 lg:w-1/5;
 }
 
 .footer li {
-    @apply mb-2;
+  @apply mb-4;
 }
 
 .footer a:hover {
-    @apply opacity-80;
+  @apply opacity-60;
 }
 
 .footer a {
-    @apply font-light text-white text-base transition;
+  @apply font-normal text-white text-base transition;
+}
+
+footer input {
+  @apply text-xs bg-[#D9DBE1] bg-opacity-20 text-white border-transparent px-3 py-3;
+  &::placeholder {
+    @apply text-white opacity-80;
+  }
 }

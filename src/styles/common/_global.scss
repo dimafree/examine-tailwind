@@ -12,6 +12,10 @@ h2 {
   @apply text-xl lg:text-40 font-medium leading-snug;
 }
 
+h4 {
+  @apply text-xl lg:text-25 font-medium leading-snug;
+}
+
 p {
   @apply text-base font-normal mb-4 md:mb-8;
 }
