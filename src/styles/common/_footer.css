@@ -1,0 +1,19 @@
+.footer p {
+    @apply text-white text-base mb-4;
+}
+
+.footer h6 {
+    @apply text-white text-base mb-4;
+}
+
+.footer li {
+    @apply mb-2;
+}
+
+.footer a:hover {
+    @apply opacity-80;
+}
+
+.footer a {
+    @apply font-light text-white text-base transition;
+}
