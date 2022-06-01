@@ -28,6 +28,10 @@ p {
   display: block !important;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .btn {
   @apply inline-block text-sm md:text-base lg:text-xl font-normal bg-primary text-white text-center p-2 md:p-4 rounded-md transition-all;
   &:hover {

@@ -25,18 +25,31 @@ document.addEventListener('DOMContentLoaded', function () {
     burger.classList.toggle('show')
   });
   burgerMobile.addEventListener('click', function () {
-    mobileMenu.classList.toggle('show')
+    mobileMenu.classList.toggle('show');
+    document.body.classList.add('no-scroll');
   });
 
+  // close mobile menu
   closeBtn.addEventListener('click', function () {
-    mobileMenu.classList.remove('show')
-    burger.classList.remove('show')
-    menu.classList.remove('show')
+    mobileMenu.classList.remove('show');
+    burger.classList.remove('show');
+    menu.classList.remove('show');
+    document.body.classList.remove('no-scroll');
   });
 
-  // submenu
+  // remove mobile menu on resize
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1280) {
+      mobileMenu.classList.remove('show');
+      burger.classList.remove('show');
+      menu.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+    }
+  });
+
+  // submenu expand/collapse
   const submenuTitle = document.getElementsByClassName('submenu-title');
-  const moreBtn = document.getElementsByClassName('more-js')[0];
+  const moreBtn = document.getElementsByClassName('more-btn')[0];
   const moreTitle = document.getElementsByClassName('more-title')[0];
 
   for (let i = 0; i < submenuTitle.length; i++) {
@@ -44,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
       e.target.parentElement.classList.toggle('active');
     })
   }
-
   moreBtn.addEventListener('click', function (e) {
     e.target.parentElement.classList.toggle('show-submenu');
     if (moreTitle.innerHTML === 'Less') {

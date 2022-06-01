@@ -60,7 +60,7 @@
       .submenu-wrapper {
         @apply block;
       }
-      .more-js {
+      .more-btn {
         img {
           @apply rotate-180;
         }
@@ -69,11 +69,11 @@
     .submenu-wrapper {
       @apply hidden;
     }
-    .more-title {
-      user-select:    none;
-      pointer-events: none;
-    }
-    .more-js {
+    .more-btn {
+      .more-title {
+        user-select:    none;
+        pointer-events: none;
+      }
       img {
         user-select:    none;
         pointer-events: none;
@@ -139,7 +139,6 @@
     }
   }
 }
-
 
 @keyframes translate {
   0% {
