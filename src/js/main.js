@@ -33,4 +33,24 @@ document.addEventListener('DOMContentLoaded', function () {
     burger.classList.remove('show')
     menu.classList.remove('show')
   });
+
+  // submenu
+  const submenuTitle = document.getElementsByClassName('submenu-title');
+  const moreBtn = document.getElementsByClassName('more-js')[0];
+  const moreTitle = document.getElementsByClassName('more-title')[0];
+
+  for (let i = 0; i < submenuTitle.length; i++) {
+    submenuTitle[i].addEventListener('click', function (e) {
+      e.target.parentElement.classList.toggle('active');
+    })
+  }
+
+  moreBtn.addEventListener('click', function (e) {
+    e.target.parentElement.classList.toggle('show-submenu');
+    if (moreTitle.innerHTML === 'Less') {
+      moreTitle.innerHTML = 'More';
+    } else {
+      moreTitle.innerHTML = 'Less';
+    }
+  })
 });

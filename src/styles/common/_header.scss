@@ -37,7 +37,7 @@
     }
   }
   .mobile-menu {
-    @apply hidden overflow-hidden bg-black bg-opacity-80  fixed z-10 left-0 top-0 w-full h-full;
+    @apply hidden overflow-auto bg-black bg-opacity-80  fixed z-10 left-0 top-0 w-full h-full;
     &.show {
       @apply block;
       .menu {
@@ -45,7 +45,7 @@
       }
     }
     .menu {
-      @apply p-4 h-full flex flex-col items-start max-w-lg transition-all bg-white;
+      @apply overflow-auto p-4 min-h-full flex flex-col items-start max-w-lg transition-all bg-white;
       .btn {
         @apply py-1;
       }
@@ -54,6 +54,87 @@
       }
       a {
         @apply text-lg;
+      }
+    }
+    .show-submenu {
+      .submenu-wrapper {
+        @apply block;
+      }
+      .more-js {
+        img {
+          @apply rotate-180;
+        }
+      }
+    }
+    .submenu-wrapper {
+      @apply hidden;
+    }
+    .more-title {
+      user-select:    none;
+      pointer-events: none;
+    }
+    .more-js {
+      img {
+        user-select:    none;
+        pointer-events: none;
+      }
+    }
+    .submenu {
+      @apply relative;
+      &:before {
+        content: '';
+        @apply w-0.5 h-[84%] absolute left-[11px] top-[10%] bg-[#C9BDD2] -z-10;
+      }
+      &.active {
+        h4 {
+          img {
+            &.minus {
+              @apply block;
+            }
+            &.plus {
+              @apply hidden;
+            }
+          }
+        }
+        ul {
+          @apply block;
+        }
+      }
+      h4 {
+        @apply mb-4 text-[17px] flex items-center text-[#495057];
+        span {
+          @apply bg-white px-0.5 mr-2 min-w-[22px] text-center text-[13px] text-[#25A1AF] font-bold border-2 border-[#25A1AF] rounded-md;
+        }
+        img {
+          @apply ml-auto;
+          user-select:    none;
+          pointer-events: none;
+          &.minus {
+            @apply hidden;
+          }
+          &.plus {
+            @apply block;
+          }
+        }
+      }
+      ul {
+        @apply hidden ml-8;
+        li {
+          @apply text-sm mb-4 relative;
+          &:active, &.active {
+            @apply text-primary;
+            span {
+              @apply text-primary;
+            }
+          }
+          &:before {
+            content: '';
+            @apply w-4 h-0.5 absolute -left-5 top-1/2 bg-[#C9BDD2] -z-10;
+          }
+          span {
+            @apply text-[#6C757D] font-bold;
+          }
+        }
       }
     }
   }
