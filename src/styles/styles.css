@@ -1607,6 +1607,22 @@ footer input::placeholder {
   border-bottom-width: 1px;
 }
 
+.focus\:opacity-60:focus {
+  opacity: 0.6;
+}
+
+.focus\:placeholder\:opacity-60:focus::-moz-placeholder {
+  opacity: 0.6;
+}
+
+.focus\:placeholder\:opacity-60:focus:-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.focus\:placeholder\:opacity-60:focus::placeholder {
+  opacity: 0.6;
+}
+
 @media (min-width: 640px) {
   .sm\:ml-0 {
     margin-left: 0px;
