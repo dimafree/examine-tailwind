@@ -12,7 +12,41 @@
 <body class="sign-up-page">
 <header class='header'>
     <div class='container mx-auto'>
-        header
+        <div class='hidden lg:flex justify-between space-x-16'>
+            <a href='#' class='py-4 w-40 flex'><img src='./images/logo.svg' alt=''></a>
+            <label class='mb-0 py-4 px-8 w-full flex items-center bg-[#F6F6F6]'>
+                <img class='w-4 mr-4' src='./images/search.svg' alt=''>
+                <input class='text-primary placeholder:text-primary text-lg border-0 border-b border-[#C9BDD2] hover:border-0 hover:border-b focus:border-0 focus:border-b rounded-none  p-0 bg-transparent'
+                       type='search'
+                       placeholder='What do you want to learn about?'>
+            </label>
+            <div class='flex py-4 items-center'>
+                <a class='px-4 py-2 transition-all rounded-30 border-2 border-transparent hover:border-premium'
+                   href='./login.html'>
+                    Login
+                </a>
+                <a class='ml-2 px-4 py-2 font-bold text-primary border-2 border-premium transition-all bg-premium rounded-30 hover:bg-transparent whitespace-nowrap'
+                   href='./sign-up.html'>
+                    Sign up
+                </a>
+                <div class="ml-4 space-y-1.5 cursor-pointer transition-all hover:opacity-60">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+            </div>
+        </div>
+        <div class='flex items-center lg:hidden justify-between space-x-16'>
+            <div class="p-2 flex rounded-md items-center justify-center flex-col mr-4 space-y-1.5 cursor-pointer bg-[#826595] transition-all hover:opacity-60">
+                <div class="w-6 h-0.5 bg-white"></div>
+                <div class="w-6 h-0.5 bg-white"></div>
+                <div class="w-6 h-0.5 bg-white"></div>
+            </div>
+            <a href='#' class='py-6 flex !ml-0 !mr-auto'>
+                <img class='w-20' src='./images/logo-white.svg' alt=''>
+            </a>
+            <img class='w-4 transition-all hover:opacity-60' src='./images/search-white.svg' alt=''>
+        </div>
     </div>
 </header>
 <main class='pt-16'>

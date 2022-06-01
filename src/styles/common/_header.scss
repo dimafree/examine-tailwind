@@ -1,20 +1,4 @@
 .header {
-    @apply py-4 fixed z-30 top-0 left-0 w-full backdrop-brightness-75 backdrop-blur-lg;
+  @apply fixed z-30 top-0 left-0 w-full bg-[#562E69] lg:bg-white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-
-.header .menu {
-    @apply items-end text-white space-x-4 xl:space-x-16 hidden md:flex;
-}
-
-.header .men li {
-    @apply transition ease-out duration-300 text-right;
-}
-
-.header .men li:not(.language):hover {
-    @apply scale-105;
-}
-
-.header .men li a {
-    @apply text-white text-lg lg:text-xl;
-}
-
