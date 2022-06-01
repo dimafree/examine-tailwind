@@ -15,6 +15,7 @@ h2 {
 h4 {
   @apply text-xl lg:text-25 font-medium leading-snug;
 }
+
 h6 {
   @apply text-sm lg:text-lg font-medium leading-snug;
 }
@@ -23,8 +24,12 @@ p {
   @apply text-base font-normal mb-4 md:mb-8;
 }
 
+.d-block {
+  display: block !important;
+}
+
 .btn {
-  @apply text-sm md:text-base lg:text-xl font-normal bg-primary text-white text-center p-2 md:p-4 rounded-md transition-all;
+  @apply inline-block text-sm md:text-base lg:text-xl font-normal bg-primary text-white text-center p-2 md:p-4 rounded-md transition-all;
   &:hover {
     @apply bg-[#8C68CD];
   }
@@ -33,6 +38,9 @@ p {
   }
   &:disabled {
     @apply bg-[#BABBBD] pointer-events-none;
+  }
+  &-secondary {
+    @apply text-primary border border-primary bg-white;
   }
 }
 

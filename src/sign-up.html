@@ -12,7 +12,7 @@
 <body class="sign-up-page">
 <header class='header'>
     <div class='container max-w-[1715px] mx-auto'>
-        <div class='hidden lg:flex justify-between space-x-16'>
+        <div class='hidden xl:flex justify-between space-x-16'>
             <a href='#' class='py-6 min-w-[148px] w-36 flex'><img src='./images/logo.svg' alt=''></a>
             <label class='max-w-screen-lg mb-0 py-6 px-10 w-full flex items-center bg-[#F6F6F6]'>
                 <img class='w-5 mr-4' src='./images/search.svg' alt=''>
@@ -23,18 +23,48 @@
             <div class='flex py-6 items-center'>
                 <a class='button' href='./login.html'>Login</a>
                 <a class='button active ml-2' href='./sign-up.html'>Sign up</a>
-                <div class="ml-4 space-y-1.5 cursor-pointer transition-all hover:opacity-60">
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
+                <ul class='menu'>
+                    <li><a href=''>Categories</a></li>
+                    <li><a href=''>Conditions</a></li>
+                    <li><a href=''>Interventions</a></li>
+                    <li><a href=''>Outcomes</a></li>
+                    <li><a href=''>Membership</a></li>
+                    <li><a href=''>About Us</a></li>
+                </ul>
+                <div class="burger burger-js">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </div>
-        <div class='flex items-center lg:hidden justify-between space-x-16'>
-            <div class="p-2 flex rounded-md items-center justify-center flex-col mr-3 space-y-1.5 cursor-pointer bg-[#826595] transition-all hover:opacity-60">
-                <div class="w-6 h-0.5 bg-white"></div>
-                <div class="w-6 h-0.5 bg-white"></div>
-                <div class="w-6 h-0.5 bg-white"></div>
+        <div class='flex items-center xl:hidden justify-between space-x-16'>
+            <div>
+                <div class='mobile-menu mobile-menu-js'>
+                    <ul class='menu'>
+                        <li class='flex !mb-4 w-full items-center justify-between'>
+                            <a href='/'>
+                                <img class='w-20' src='./images/logo.svg' alt=''>
+                            </a>
+                            <img class='w-6 close-js' src='./images/close.svg' alt=''>
+                        </li>
+                        <li class='flex w-full items-center space-x-4'>
+                            <a class='btn btn-secondary w-1/2' href='./login.html'>Login</a>
+                            <a class='btn w-1/2' href='./sign-up.html'>Sign up</a>
+                        </li>
+                        <li><a href=''>Categories</a></li>
+                        <li><a href=''>Conditions</a></li>
+                        <li><a href=''>Interventions</a></li>
+                        <li><a href=''>Outcomes</a></li>
+                        <li><a href=''>Membership</a></li>
+                        <li><a href=''>About Us</a></li>
+                    </ul>
+                </div>
+                <div class="burger burger-mobile-js p-2 min-h-[34px] flex items-center justify-center flex-col rounded-md mr-3  bg-[#826595]">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
             <a href='#' class='py-5 flex !ml-0 !mr-auto'>
                 <img class='w-20' src='./images/logo-white.svg' alt=''>
