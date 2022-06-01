@@ -21,7 +21,7 @@ p {
 }
 
 .btn {
-  @apply text-sm md:text-base lg:text-xl font-normal bg-primary text-white text-center p-4 rounded-md transition-all;
+  @apply text-sm md:text-base lg:text-xl font-normal bg-primary text-white text-center p-2 md:p-4 rounded-md transition-all;
   &:hover {
     @apply bg-[#8C68CD];
   }
@@ -34,9 +34,9 @@ p {
 }
 
 label {
-  @apply block mb-4;
+  @apply block mb-4 md:mb-6;
   input {
-    @apply text-sm md:text-base lg:text-xl text-dark block w-full border border-[#CED4DA] rounded-md px-4 py-2;
+    @apply text-sm md:text-base lg:text-xl text-dark block w-full border border-[#CED4DA] rounded-md px-6 py-2;
     &::placeholder {
       @apply text-secondary;
     }
@@ -50,5 +50,5 @@ label {
 }
 
 .password {
-  @apply absolute right-2 top-1/2 -translate-y-1/2 text-[#562E69] uppercase font-bold text-xs transition-all hover:opacity-80 cursor-pointer;
+  @apply absolute right-4 top-1/2 -translate-y-1/2 text-[#562E69] uppercase font-bold text-xs transition-all hover:opacity-80 cursor-pointer;
 }

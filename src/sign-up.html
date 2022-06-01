@@ -11,16 +11,16 @@
 
 <body class="sign-up-page">
 <header class='header'>
-    <div class='container mx-auto'>
+    <div class='container max-w-[1715px] mx-auto'>
         <div class='hidden lg:flex justify-between space-x-16'>
-            <a href='#' class='py-4 w-40 flex'><img src='./images/logo.svg' alt=''></a>
-            <label class='mb-0 py-4 px-8 w-full flex items-center bg-[#F6F6F6]'>
-                <img class='w-4 mr-4' src='./images/search.svg' alt=''>
+            <a href='#' class='py-6 min-w-[148px] w-36 flex'><img src='./images/logo.svg' alt=''></a>
+            <label class='max-w-screen-lg mb-0 py-6 px-10 w-full flex items-center bg-[#F6F6F6]'>
+                <img class='w-5 mr-4' src='./images/search.svg' alt=''>
                 <input class='text-primary placeholder:text-primary text-lg border-0 border-b border-[#C9BDD2] hover:border-0 hover:border-b focus:border-0 focus:border-b rounded-none  p-0 bg-transparent'
                        type='search'
                        placeholder='What do you want to learn about?'>
             </label>
-            <div class='flex py-4 items-center'>
+            <div class='flex py-6 items-center'>
                 <a class='px-4 py-2 transition-all rounded-30 border-2 border-transparent hover:border-premium'
                    href='./login.html'>
                     Login
@@ -37,12 +37,12 @@
             </div>
         </div>
         <div class='flex items-center lg:hidden justify-between space-x-16'>
-            <div class="p-2 flex rounded-md items-center justify-center flex-col mr-4 space-y-1.5 cursor-pointer bg-[#826595] transition-all hover:opacity-60">
+            <div class="p-2 flex rounded-md items-center justify-center flex-col mr-3 space-y-1.5 cursor-pointer bg-[#826595] transition-all hover:opacity-60">
                 <div class="w-6 h-0.5 bg-white"></div>
                 <div class="w-6 h-0.5 bg-white"></div>
                 <div class="w-6 h-0.5 bg-white"></div>
             </div>
-            <a href='#' class='py-6 flex !ml-0 !mr-auto'>
+            <a href='#' class='py-5 flex !ml-0 !mr-auto'>
                 <img class='w-20' src='./images/logo-white.svg' alt=''>
             </a>
             <img class='w-4 transition-all hover:opacity-60' src='./images/search-white.svg' alt=''>
@@ -50,10 +50,10 @@
     </div>
 </header>
 <main class='pt-16'>
-    <section class="sign-up-form my-16 md:my-32">
+    <section class="sign-up-form my-6 md:my-32">
         <div class='container mx-auto'>
-            <div class='max-w-xl mx-auto text-center rounded-30 sm:shadow-box p-0 sm:p-8 lg:p-16'>
-                <h2>Create your account</h2>
+            <div class='max-w-sm md:max-w-2xl mx-auto text-center rounded-30 sm:shadow-box p-0 sm:p-12 lg:p-20'>
+                <h2 class='mb-2'>Create your account</h2>
                 <p class='text-secondary'>It’s Includes a free 2 week trial!</p>
                 <ul class='socials'>
                     <li><img src='./images/google.svg' alt=''></li>
@@ -80,21 +80,27 @@
         </div>
     </section>
 </main>
-<footer class="py-16 footer bg-primary">
-    <div class='container mx-auto'>
+<footer class="py-14 2xl:py-24 footer bg-primary">
+    <div class='container max-w-[1625px] mx-auto'>
         <div class='flex flex-wrap justify-between'>
             <div class='list'>
                 <a href=''>
                     <img class='mb-4 mx-auto sm:ml-0' src='./images/logo-white.svg' alt=''>
                 </a>
-                <p>Copyright 2010 - 2021 Examine Inc.</p>
-                <p>All rights reserved</p>
+                <p class='mb-2'>Copyright 2010 - 2021 Examine Inc.</p>
+                <p class='mb-4'>All rights reserved</p>
                 <ul class='socials'>
                     <li><a href='#'><img src='./images/instagram.svg' alt=''></a></li>
-                    <li><a href='#'><img src='./images/instagram.svg' alt=''></a></li>
-                    <li><a href='#'><img src='./images/instagram.svg' alt=''></a></li>
-                    <li><a href='#'><img src='./images/instagram.svg' alt=''></a></li>
+                    <li><a href='#'><img src='./images/linkedin.svg' alt=''></a></li>
+                    <li><a href='#'><img src='./images/twitter.svg' alt=''></a></li>
+                    <li><a href='#'><img src='./images/youtube.svg' alt=''></a></li>
                 </ul>
+                <div class='mt-6 sm:mt-12 block 2xl:hidden'>
+                    <h4>Stay up to date</h4>
+                    <label>
+                        <input class='mx-auto sm:ml-0 max-w-[296px]' type='text' placeholder='Your email address'>
+                    </label>
+                </div>
             </div>
             <ul class='list'>
                 <li><h4>Company</h4></li>
@@ -125,7 +131,7 @@
                 </li>
                 <li><a href='#'>Protein Intake Guide + Calculator</a></li>
             </ul>
-            <div class='list hidden xl:block'>
+            <div class='list hidden 2xl:block'>
                 <h4>Stay up to date</h4>
                 <label>
                     <input type='text' placeholder='Your email address'>

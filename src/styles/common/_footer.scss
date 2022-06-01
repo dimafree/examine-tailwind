@@ -3,18 +3,18 @@
 }
 
 .footer p {
-  @apply text-white text-sm mb-2;
+  @apply text-white text-sm;
 }
 
 .footer .socials {
-  @apply flex justify-center sm:justify-start space-x-2;
+  @apply flex justify-center sm:justify-start space-x-4;
   img {
     @apply w-8;
   }
 }
 
 .footer h4 {
-  @apply text-white font-bold text-xl mb-4;
+  @apply text-white font-bold text-xl mb-6;
 }
 
 .footer .list {

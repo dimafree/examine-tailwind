@@ -1,8 +1,11 @@
 .sign-up-form {
   .socials {
-    @apply flex justify-center mb-8 space-x-4;
+    @apply flex justify-center mb-8 space-x-3;
     li {
       @apply cursor-pointer transition-all hover:opacity-80;
+    }
+    img {
+      @apply w-10 md:w-20;
     }
   }
 }
