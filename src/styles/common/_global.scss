@@ -15,6 +15,9 @@ h2 {
 h4 {
   @apply text-xl lg:text-25 font-medium leading-snug;
 }
+h6 {
+  @apply text-sm lg:text-lg font-medium leading-snug;
+}
 
 p {
   @apply text-base font-normal mb-4 md:mb-8;
