@@ -560,10 +560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -636,10 +632,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 1024px;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .max-w-\[1625px\] {
   max-width: 1625px;
 }
@@ -648,8 +640,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 296px;
 }
 
-.max-w-xs {
-  max-width: 20rem;
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .cursor-pointer {
@@ -694,28 +686,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.whitespace-nowrap {
-  white-space: nowrap;
-}
-
 .rounded-none {
   border-radius: 0px;
-}
-
-.rounded-30 {
-  border-radius: 30px;
 }
 
 .rounded-md {
   border-radius: 0.375rem;
 }
 
-.border-0 {
-  border-width: 0px;
+.rounded-30 {
+  border-radius: 30px;
 }
 
-.border-2 {
-  border-width: 2px;
+.border-0 {
+  border-width: 0px;
 }
 
 .border {
@@ -733,15 +717,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#C9BDD2\] {
   --tw-border-opacity: 1;
   border-color: rgb(201 189 210 / var(--tw-border-opacity));
-}
-
-.border-transparent {
-  border-color: transparent;
-}
-
-.border-premium {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 215 71 / var(--tw-border-opacity));
 }
 
 .border-\[\#EDF2F7\] {
@@ -763,11 +738,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.bg-premium {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 215 71 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -786,6 +756,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(94 59 118 / var(--tw-bg-opacity));
+}
+
+.bg-premium {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 215 71 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#25A1AF\] {
@@ -819,16 +794,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -852,6 +817,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pt-16 {
@@ -1213,6 +1183,39 @@ label input:focus {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
+.header .button {
+  white-space: nowrap;
+  border-radius: 30px;
+  border-width: 2px;
+  border-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.header .button:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 215 71 / var(--tw-border-opacity));
+}
+
+.header .button.active {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 215 71 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 215 71 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(94 59 118 / var(--tw-text-opacity));
+}
+
+.header .button.active:hover {
+  background-color: transparent;
+}
+
 .footer {
   text-align: center;
 }
@@ -1387,15 +1390,6 @@ footer input::placeholder {
 
 .hover\:border-b:hover {
   border-bottom-width: 1px;
-}
-
-.hover\:border-premium:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 215 71 / var(--tw-border-opacity));
-}
-
-.hover\:bg-transparent:hover {
-  background-color: transparent;
 }
 
 .hover\:opacity-60:hover {
